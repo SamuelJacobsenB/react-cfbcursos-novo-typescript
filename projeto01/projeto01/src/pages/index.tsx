@@ -7,12 +7,27 @@ export default function Home() {
     return nome;
   };
 
+  const cur = (): string =>{
+    return curso;
+  };
+
+  function Topo(){
+    return (
+      <div style={{display: "flex",justifyContent: 'space-between', backgroundColor: 'gray', color: '#fff', height: '70px', width: '100vw', padding: '20px'}}>
+        <div>Logo</div>
+        <div>{cur()}</div>
+      </div>
+    ); 
+  };
+
   return (
     <main>
-      <div>{curso}</div>
+      <Topo></Topo>
+      <div>{cur()}</div>
       <div>{retNome()}</div>
       <div>Typescript</div>
       <div>React</div>
     </main>
   );
 };
+ 
