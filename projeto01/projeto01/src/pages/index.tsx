@@ -13,9 +13,13 @@ export default function Home() {
 
   function Topo(){
     return (
-      <div style={{display: "flex",justifyContent: 'space-between', backgroundColor: 'gray', color: '#fff', height: '70px', width: '100vw', padding: '20px'}}>
+      <div className="flex justify-between items-center bg-slate-600 h-[80px]">
         <div>Logo</div>
-        <div>{cur()}</div>
+        <div className="flex flex-col ">
+          <div className="padDiv">{cur()}</div>
+          <div className="padDiv">{nome}</div>
+          <div className="padDiv">Menu</div>
+        </div>
       </div>
     ); 
   };
