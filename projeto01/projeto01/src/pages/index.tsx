@@ -13,12 +13,12 @@ export default function Home() {
 
   function Topo(){
     return (
-      <div className="flex justify-between items-center bg-slate-600 h-[80px]">
+      <div className="flex justify-between items-center bg-slate-600 h-[100px]">
         <div>Logo</div>
         <div className="flex flex-col ">
           <div className="padDiv">{cur()}</div>
           <div className="padDiv">{nome}</div>
-          <div className="padDiv">Menu</div>
+          <div style={teste}>Menu</div>
         </div>
       </div>
     ); 
@@ -34,4 +34,9 @@ export default function Home() {
     </main>
   );
 };
+
+const teste = {
+  backgroundColor: 'white',
+  color: 'black'
+};  
  
