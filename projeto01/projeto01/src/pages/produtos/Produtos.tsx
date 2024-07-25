@@ -1,5 +1,6 @@
 import Topo from "@/components/Topo";
 import Card from "@/components/Card";
+import { useRouter } from "next/router";
 
 const Produtos = () => {
 
@@ -49,12 +50,15 @@ const Produtos = () => {
           disponivel: true
         }
     ];  
-    
+
+    const router = useRouter();
+    const {nome, curso} = router.query;
+    console.log(nome, curso)
 
   return (
     <>
-    <Topo></Topo>
-    <div className="list">
+      <Topo></Topo>
+      <div className="list">
         {
             produtos.map((el: any, i: number)=>{
                 return (
