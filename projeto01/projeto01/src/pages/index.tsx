@@ -8,9 +8,9 @@ export default function Home() {
       <div>Typescript</div>
       <div>React</div>
       <div className="flex justify-center">
-        <Card produto={'mouse'} valor={'59,90'}/>
-        <Card produto={'teclado'} valor={'159,90'}/>
-        <Card produto={'monitor'} valor={'1250.00'}/>
+        <Card produto={'Mouse'} valor={59.90} desconto={5.00}/>
+        <Card produto={'Teclado'} valor={159.90} desconto={10.00}/>
+        <Card produto={'Monitor'} valor={1250.00} desconto={50.00}/>
       </div>
     </main>
   );
